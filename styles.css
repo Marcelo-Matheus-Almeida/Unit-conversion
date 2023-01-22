@@ -66,6 +66,14 @@ input[type=number]::-webkit-inner-spin-button {
     outline: none;
 }
 
+.result-div{
+    padding: 25px 50px;
+    width: 80%;
+    background: #fafafa;
+    color: #1d2e44;
+    transition: 0.2s linear;
+}
+
 #converter-btn{
     color: whitesmoke;
     font-size: 30px;
@@ -85,6 +93,7 @@ input[type=number]::-webkit-inner-spin-button {
     #input-el{
         max-width: 150px;
         height: 80px;
+        font-size: 60px;
     }
 
     #converter-btn{
@@ -92,17 +101,15 @@ input[type=number]::-webkit-inner-spin-button {
         width: 150px;
         height: 70px;
     }
-}
 
-.result-div{
-    padding: 25px 50px;
-    width: 80%;
-    background: #fafafa;
-    color: #1d2e44;
-    transition: 0.2s linear;
+    .result-div{
+        padding: 25px 10px;
+    }
 }
 
 /* botao toggle dark mode */
+
+
 
 body.dark{
     background: #1F2937;
