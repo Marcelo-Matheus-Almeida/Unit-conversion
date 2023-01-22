@@ -22,5 +22,7 @@ inputEl.addEventListener('keypress', function(e){
         meterFeetEl.innerHTML = `<p> ${inputEl.value} metros = ${(inputEl.value * 3.281).toFixed(3)} pes | ${inputEl.value} pes = ${(inputEl.value / 3.281).toFixed(3)} metros</p>`
         literGallonsEl.innerHTML = `<p> ${inputEl.value} litros = ${(inputEl.value * 0.264).toFixed(3)} galões | ${inputEl.value} galões = ${(inputEl.value / 0.264).toFixed(3)} litros</p>`
         kgPdEl.innerHTML = `<p> ${inputEl.value} kilos = ${(inputEl.value * 2.204).toFixed(3)} pounds | ${inputEl.value} pounds = ${(inputEl.value / 2.204).toFixed(3)} kilos </p>`
+    }else{
+        alert("Insira um valor para ser convertido")
     }
  }
