@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .highlight{
     border: 2px dotted red;
 }
@@ -5,7 +9,7 @@
 body{
     font-family: 'Karla', sans-serif;
     color: whitesmoke;
-    background: #1F2937;
+    background: #fafafa;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -13,6 +17,7 @@ body{
     margin-top: 20px;
     width: 50%;
     margin: 0 auto;
+    transition: 0.2s linear;
 }
 
 #top-div{
@@ -23,11 +28,10 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    box-sizing: border-box;
 }
 
 #results{
-    background: #1d2e44;
+    background: #fafafa;
     padding: 25px 50px;
     display: flex;
     flex-direction: column;
@@ -35,7 +39,7 @@ body{
     align-items: center;
     gap: 20px;
     width: 100%;
-    box-sizing: border-box;
+    transition: 0.2s linear;
 }
 
 #title{
@@ -93,5 +97,66 @@ input[type=number]::-webkit-inner-spin-button {
 .result-div{
     padding: 25px 50px;
     width: 80%;
+    background: #fafafa;
+    color: #1d2e44;
+    transition: 0.2s linear;
+}
+
+/* botao toggle dark mode */
+
+body.dark{
+    background: #1F2937;
+}
+
+#results.dark{
+    background: #1d2e44;
+}
+
+.result-div.dark{
+    color: whitesmoke;
     background: #273549;
+}
+
+.fa-sun{
+    color: #ff9c08;
+}
+
+.fa-moon{
+    color: #f5ff67;
+}
+
+#checkBoxDarkMode{
+    position: absolute;
+    opacity: 0;
+}
+
+#label{
+    background: #1F2937;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 50px;
+    height: 26px;
+    position: relative;
+    transform: scale(1.5);
+    margin: 15px 0;
+}
+
+#ballSelector{
+    position: absolute;
+    background: #fafafa;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    left: 2px;
+    top: 2px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+#checkBoxDarkMode:checked + #label #ballSelector{
+    transform: translateX(24px);
 }

@@ -10,7 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="corpo">
+    <div>
+        <input type="checkbox" id="checkBoxDarkMode">
+
+        <label for="checkBoxDarkMode" id="label">
+            <i class="fa-sharp fa-solid fa-moon"></i>
+            <i class="fa-sharp fa-solid fa-sun"></i>
+            <div id="ballSelector"></div>
+        </label>
+    </div>
     <div id="top-div">
         <h1 id="title">Conversor de medidas</h1>
         <input type="number" placeholder="20" name="" id="input-el">
@@ -31,5 +40,6 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/621217b912.js" crossorigin="anonymous"></script>
 </body>
 </html>
